@@ -1,0 +1,176 @@
+:root{
+    --negro: #000;
+    --blanco: #fff;
+    --primario: #1e88e5;
+    --secundario: #ffeb3b;
+    --colorbtn: #fbc02d;
+    --azulclaro: #c2e1eb;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--blanco);
+}
+
+
+/*Estilo para la clase imagen*/
+.img_header{
+    width: 8rem;/*1rem=10px*/
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.header_main{
+    background-color: var(--primario);
+    padding: 0.5rem;
+    margin: -0.5rem;
+    display: flex;
+}
+
+.header__cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0 0 1rem;
+    width: 400px;
+}
+
+.anuncio{
+    margin-top: -3.1rem;
+    margin-bottom: -0.1rem;
+    padding-bottom: 1rem;
+    background-color: var(--negro);
+}
+
+.eslogan {
+    background-image: url(/RECURSOS/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 20px;
+    padding-top: -20rem;
+}
+.eslogan p{
+    color: var(--negro);
+}
+
+.eslogan-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.eslogan h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+    color: var(--secundario);
+}
+
+.eslogan p {
+    font-size: 1.2em;
+}
+
+.login{
+    width: 55rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--secundario);
+    color: var(--primario);
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: var(--colorbtn);
+    transform: scale(1.1); 
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--azulclaro);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.servicio {
+    max-width: 300px;
+}
+
+.servicio h3 {
+    font-size: 1.5em;
+    color: var(--primario);
+}
+
+footer {
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+/*Slider*/
+
+.slider-frame {
+    width: 20rem;/*Cambio de ancho*/
+    height: 10rem;/*Cambio de la altura*/
+    margin:50px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 25%;
+    list-style: none;
+}
+
+.slider-frame img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
